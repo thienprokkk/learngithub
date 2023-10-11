@@ -12,7 +12,7 @@ int main()
     std::getline(std::cin, checkNumber);
     number = std::stoi(checkNumber);
 
-    if (checkNumber[0] == '0' || number < 10 /*a_b: a != 0*/|| (number > 189 && number <= 1000) /*ab_c: ab <= 18*/|| number > 1818 /*ab_cd: ab, cd <= 18*/)
+    if (checkNumber[0] == '0' || number < 10 /*a_b: a != 0*/|| (number > 189 && number < 1000) /*ab_c: ab <= 18*/|| number > 1818 /*ab_cd: ab, cd <= 18*/)
     {
         std::cout << X;
         return 0;
